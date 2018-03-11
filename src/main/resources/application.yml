@@ -1,0 +1,25 @@
+# 服务器配置
+server:
+  port: 8080
+  context-path: /javablog
+
+# 数据库配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/javablog
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+# thymeleaf模板配置
+  thymeleaf:
+    cache: false # 缓存
+    suffix: .html # 后缀
+    prefix: classpath:/templates/ # 文件路径
+    mode: LEGACYHTML5 # html版本
+    encoding: UTF-8 # 编码
+    content-type: text/html
+
