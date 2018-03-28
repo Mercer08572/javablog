@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>编辑文章</title>
+    <!--外部css文件-->
+    <link rel="stylesheet" href="css/editormd.css"  /> <!--th:href="@{/markdownEditor/css/editormd.css}"-->
+    <!--外部js文件-->
+    <script type="text/javascript" src="../js/jquery.min.js" ></script> <!--th:src= "@{/js/jquery.min.js}"-->
+    <script type="text/javascript" src="js/editormd.js" ></script> <!--th:src="@{/markdownEditor/js/editormd.js}"-->
+    <!--自身js文件-->
+    <script type="text/javascript" src="js/markdownEditor.js" ></script> <!--th:src="@{/markdownEditor/js/markdownEditor.js}"-->
+</head>
+<body>
+    <div id="editormd">
+        <textarea style="display:none;">### Hello Editor.md !</textarea>
+    </div>
+</body>
+</html>

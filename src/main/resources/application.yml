@@ -2,6 +2,8 @@
 server:
   port: 8080
   context-path: /javablog
+  tomcat:
+    max-http-post-size: -1
 
 # 数据库配置
 spring:

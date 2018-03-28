@@ -20,9 +20,9 @@ public class pageController {
     /*
     markdown编辑器
      */
-    @RequestMapping("/MarkdownEditor/markdownEditor")
+    @RequestMapping("/markdownEditor/markdownEditor")
     public String markdownEditor(){
-        return "./MarkdownEditor/markdownEditor";
+        return "./markdownEditor/markdownEditor";
     }
 
 }
